@@ -1,0 +1,47 @@
+@import "./variables";
+
+.explore-stories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  .text {
+    p {
+      text-transform: uppercase;
+
+      font-size: 15px;
+      font-weight: 600;
+      color: $primary-color;
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 48px;
+      margin-top: 15px;
+      line-height: 0.9;
+    }
+  }
+  .links {
+    a {
+      text-decoration: none;
+      padding: 10px;
+      border: 1px solid grey;
+      color: $primary-color;
+      font-weight: 600;
+      background-color: white;
+      border-radius: 20px;
+      padding: 7px 10px 10px;
+      font-size: 14px;
+    }
+    a:hover {
+      color: white;
+      background-color: $color-a;
+      transition: 0.2s ease-in-out;
+    }
+    a:first-child {
+      margin-right: 10px;
+    }
+  }
+}

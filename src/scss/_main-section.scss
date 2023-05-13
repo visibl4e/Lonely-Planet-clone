@@ -1,0 +1,35 @@
+@import "./variables";
+
+.go-container {
+  padding: 20px;
+  p {
+    color: $primary-color;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .view-destinations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    h2 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 0.8;
+    }
+    a {
+      text-decoration: none;
+      padding: 10px;
+      border: 1px solid grey;
+      color: $primary-color;
+      font-weight: 600;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    a:hover {
+      color: white;
+      background-color: $color-a;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}

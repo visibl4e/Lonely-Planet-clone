@@ -1,0 +1,18 @@
+@import "./header-images";
+@import "./configs";
+@import "./main-section";
+@import "./cards-section";
+@import "./video-section";
+@import "./explore-section";
+@import "./arcticle-section";
+@import "./book-section";
+@import "./socials-section";
+@import "./footer-section";
+// animation arrow
+@import "../scss/mixins/arrow-bounce";
+// contacts section
+@import "./contacts/header.contacts";
+
+//destinations.page
+@import "./destinations.page/destinations.header.scss";
+@import "./destinations.page/destinations.main.scss";

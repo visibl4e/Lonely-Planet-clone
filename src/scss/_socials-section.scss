@@ -1,0 +1,78 @@
+@import "./variables";
+
+.social {
+  background: rgba(0, 87, 217, 0.9);
+  height: 650px;
+  max-width: 100%;
+  padding: 20px 0;
+  .social-links {
+    margin: 0px 40px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .home {
+      text-decoration: none;
+      font-size: 48px;
+      color: $body-color;
+      font-weight: bold;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      .icon {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      p {
+        font-weight: bold;
+        color: $body-color;
+        margin-right: 10px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .review-gallery {
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    a {
+      text-decoration: none;
+      position: relative;
+      flex: 16.6%;
+      opacity: 0.8;
+      transition: opacity 0.2s ease-in-out;
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        float: left;
+      }
+
+      .transition {
+        position: absolute;
+        background-image: $overlay-social;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 30;
+      }
+      span {
+        position: absolute;
+        bottom: 3%;
+        left: 3%;
+        color: $secondary-color;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+    a:hover {
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+  }
+}

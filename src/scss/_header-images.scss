@@ -1,0 +1,292 @@
+@import "./variables";
+@import "./mixins/arrow-bounce";
+// HEADER IMAGES CONTAINER
+.image-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+
+  .slogan {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    bottom: 50%;
+    z-index: 10;
+    color: $secondary-color;
+    text-align: center;
+    font-size: 80px;
+  }
+  .hull-image__one {
+    position: relative;
+    width: 33.33%;
+    background-image: url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=821&q=80");
+    background-repeat: no-repeat;
+    box-shadow: $box-shadowImage;
+    transition: box-shadow 0.8s ease-in-out;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: 10%;
+    background-position-y: 50%;
+    overflow: hidden;
+    .hull-text__one {
+      position: absolute;
+      color: $secondary-color;
+      width: 200px;
+      top: 75%;
+      left: 40px;
+      font-size: $font-size;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    p:hover {
+      color: $header-image-color;
+    }
+
+    .bounce {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      color: $secondary-color;
+      top: 75%;
+      left: 80%;
+      bottom: 15%;
+      font-size: $font-size;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .bounce:hover {
+      color: $header-image-color;
+      @include animation(bounce 1.4s ease-in);
+    }
+  }
+  .hull-image__one:hover {
+    box-shadow: $box-shadowImage__hover;
+    transition: box-shadow 0.8s ease-in-out;
+  }
+  .hull-image__two {
+    position: relative;
+    width: 33.33%;
+    background-image: url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    box-shadow: $box-shadowImage;
+    transition: box-shadow 0.8s ease-in-out;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    overflow: hidden;
+    .hull-text__two {
+      position: absolute;
+      color: $secondary-color;
+      width: 200px;
+      top: 75%;
+      left: 40px;
+      font-size: $font-size;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    p:hover {
+      color: $header-image-color;
+    }
+
+    .bounce {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      color: $secondary-color;
+      top: 75%;
+      left: 80%;
+      bottom: 15%;
+      font-size: $font-size;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .bounce:hover {
+      color: $header-image-color;
+      @include animation(bounce 1.4s ease-in);
+    }
+  }
+  .hull-image__two:hover {
+    box-shadow: $box-shadowImage__hover;
+    transition: box-shadow 0.8s ease-in-out;
+  }
+  .hull-image__three {
+    position: relative;
+    width: 33.33%;
+    background-image: url("https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    box-shadow: $box-shadowImage;
+    transition: box-shadow 0.8s ease-in-out;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    overflow: hidden;
+    .hull-text__three {
+      position: absolute;
+      color: $secondary-color;
+      width: 200px;
+      top: 75%;
+      left: 40px;
+      font-size: $font-size;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    p:hover {
+      color: $header-image-color;
+    }
+
+    .bounce {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      color: $secondary-color;
+      top: 75%;
+      left: 80%;
+      bottom: 15%;
+      font-size: $font-size;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .bounce:hover {
+      color: $header-image-color;
+      @include animation(bounce 1.4s ease-in);
+    }
+  }
+  .hull-image__three:hover {
+    box-shadow: $box-shadowImage__hover;
+    transition: box-shadow 0.8s ease-in-out;
+  }
+}
+
+// HEADER NAVBAR CONTAINE R
+
+.navbar-container {
+  position: absolute;
+  padding: 0 30px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  z-index: 2;
+  overflow: visible;
+  justify-content: space-between;
+  .navbar-links {
+    display: flex;
+    ul {
+      display: block;
+      align-items: center;
+      li {
+        position: relative;
+        a {
+          text-decoration: none;
+          font-size: 20px;
+          border: none;
+          padding: 0;
+          background: none;
+          font-weight: bold;
+          margin: 0 20px;
+          color: $secondary-color;
+        }
+        a:first-child {
+          margin-left: 20px;
+        }
+        a:hover {
+          color: $header-image-color;
+        }
+        .submenu {
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          z-index: 20;
+          position: absolute;
+          width: 180px;
+          background-color: #fff;
+          right: -50px;
+          height: auto;
+          opacity: 0;
+          width: 250px;
+          border-bottom: none;
+          .sub-list {
+            li {
+              text-align: left;
+              padding: 5px;
+              border-bottom: 1px solid #c0c0c0;
+              cursor: pointer;
+              a {
+                font-weight: 500;
+                font-size: 16px;
+                color: $primary-color;
+              }
+            }
+            li:hover {
+              background-color: $color-a;
+            }
+            li:first-child:hover {
+              border-radius: 5px 5px 0 0;
+            }
+            li:last-child:hover {
+              border-radius: 0 0 5px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+
+    .search {
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: $secondary-color;
+      width: 90px;
+      box-sizing: border-box;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 0;
+      // border-bottom: transparent;
+      transition: width 0.6s ease-in;
+    }
+  }
+  .search:hover {
+    color: $header-image-color;
+    transition: width 0.6s ease;
+    width: 300px;
+    background-color: #fff;
+  }
+
+  i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: $secondary-color;
+  }
+  i:hover {
+    color: $header-image-color;
+    cursor: pointer;
+  }
+
+  .main-logo__href {
+    width: 200px;
+    height: 20px;
+    text-decoration: none;
+    p {
+      display: flex;
+      align-items: center;
+      color: $secondary-color;
+      font-weight: bold;
+      font-size: 20px;
+      .logo {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

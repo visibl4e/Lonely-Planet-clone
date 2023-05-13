@@ -1,0 +1,10 @@
+.collapsible {
+  .active {
+    .collapsible-body {
+      display: contents;
+      span {
+        margin: 20px;
+      }
+    }
+  }
+}

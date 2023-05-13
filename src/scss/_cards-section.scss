@@ -1,0 +1,84 @@
+@import "./variables";
+
+.go-cards {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  margin-top: 60px;
+  height: 300px;
+  .go-card__one {
+    position: relative;
+    width: 33%;
+    background-image: url("https://images.pexels.com/photos/1703311/pexels-photo-1703311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    p {
+      position: absolute;
+      padding: 15px;
+      font-size: 32px;
+      text-decoration: none;
+      color: $secondary-color;
+      top: 80%;
+      font-weight: 600;
+    }
+  }
+  .go-card__one:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+  }
+  .go-card__two {
+    position: relative;
+    width: 33%;
+    background-image: url("https://images.pexels.com/photos/12326899/pexels-photo-12326899.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    p {
+      position: absolute;
+      padding: 15px;
+      font-size: 32px;
+      text-decoration: none;
+      color: $secondary-color;
+      top: 80%;
+      font-weight: 600;
+    }
+  }
+  .go-card__two:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+  }
+  .go-card__three {
+    position: relative;
+    width: 33%;
+    background-image: url("https://images.pexels.com/photos/8249882/pexels-photo-8249882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    p {
+      position: absolute;
+      padding: 15px;
+      font-size: 32px;
+      text-decoration: none;
+      color: $secondary-color;
+      top: 80%;
+      font-weight: 600;
+    }
+  }
+  .go-card__three:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+  }
+}
